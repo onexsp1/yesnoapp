@@ -18,13 +18,12 @@ class MyApp extends StatelessWidget {
         ),
         body:  Center(
           child: FilledButton(
-            onPressed: (){}, 
-            child: const Text("Click me"),
+            onPressed: (){},             
             style: FilledButton.styleFrom(
               backgroundColor: Colors.blue, // Background color
-              foregroundColor: Colors.white, // Text and icon color
+              foregroundColor: Colors.red, // Text and icon color
             ),
-            
+            child: const Text("Click me"),
            )
         ),
       ),
