@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yes_no_app/presentation/screens/chat/chat_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,26 +8,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Yes No App', style: TextStyle(color: Colors.white),),
-          centerTitle: true,
-          backgroundColor: Colors.blue,
-        ),
-        body:  Center(
-          child: FilledButton(
-            onPressed: (){},             
-            style: FilledButton.styleFrom(
-              backgroundColor: Colors.blue, // Background color
-              foregroundColor: Colors.red, // Text and icon color
-            ),
-            child: const Text("Click me"),
-           )
-        ),
-      ),
+      home: ChatScreen()
     );
   }
 }
